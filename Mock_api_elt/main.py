@@ -71,6 +71,9 @@ class ELTProcessor:
 
 # Example usage
 if __name__ == "__main__":
+    access_key = "AKI6"
+    secret_key = "hRpkXlOk"
+    endpoint = "s3.ap-southeast-2.amazonaws.com"
     spark = SparkSession.builder \
         .appName("ELT Pipeline") \
         .config("spark.hadoop.fs.s3a.access.key", access_key) \
